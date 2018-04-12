@@ -1,0 +1,18 @@
+.dialog-container{
+  background: yellow;
+  padding: 10px 15px;
+}
+.dialog-container--header{
+  color: #000022;
+  background: yellow;
+}
+.dialog-container--footer{
+  color: #000022;
+  background: yellow;
+}
+.dialog-container {
+  &--header, &--footer{
+    font-size: 11px;
+  }
+}
+

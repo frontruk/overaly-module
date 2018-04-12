@@ -1,0 +1,59 @@
+<div class="sidebar">
+  <h2>Menu list 1</h2>
+  <ul>
+    <li>
+      <a
+      #chatOverlay="cdkOverlayOrigin"
+      cdkOverlayOrigin
+      (click)="openTestA(!isTestAOpened)"
+      routerLink="overlay">Open 1 pop up</a></li>
+    <li><a routerLink="overlay">Menu 3</a></li>
+    <li><a routerLink="overlay">Menu 4</a></li>
+    <li><a routerLink="overlay">Menu 5</a></li>
+  </ul>
+  <hr>
+  <h2>Menu list 2</h2>
+  <ul>
+    <li><a
+      #overlayOrigin="cdkOverlayOrigin"
+      cdkOverlayOrigin
+      (click)="openTestB(!isTestBOpened)"
+      routerLink="overlay">Open 2 popup</a></li>
+    <li><a routerLink="overlay">Menu 3</a></li>
+    <li><a routerLink="overlay">Menu 4</a></li>
+    <li><a routerLink="overlay">Menu 5</a></li>
+  </ul>
+</div>
+<div class="content">
+
+
+      <semui-overlay-dialog
+        [overlayOrigin]="chatOverlay"
+        [isOpened]="isTestAOpened"
+        (close)="openTestA(false)"
+        (open)="openTestA(true)"
+      >
+        <div class="dialog-container--body">
+
+           Overlay
+        </div>
+      </semui-overlay-dialog>
+
+
+      <!--<semui-overlay-dialog-->
+        <!--[overlayOrigin]="overlayOrigin"-->
+        <!--[isOpened]="isTestBOpened"-->
+        <!--(close)="openTestB(false)"-->
+        <!--(open)="openTestB(true)"-->
+      <!--&gt;-->
+        <!--<div class="dialog-container&#45;&#45;body_spaced">-->
+          <!--asdasasdas-->
+          <!--das-->
+          <!--das-->
+          <!--dasd-->
+          <!--asd-->
+        <!--</div>-->
+        <!--<div class="dialog-container&#45;&#45;footer">-->
+          <!--Section header small-->
+        <!--</div>-->
+      <!--</semui-overlay-dialog>-->

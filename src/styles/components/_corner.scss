@@ -1,0 +1,34 @@
+@import './circle';
+.corner{
+  @extend .p1;
+  &_top{
+    @include sem-rounded( 6px 6px 0px 0px );
+  }
+  &_bottom{
+    @include sem-rounded( 0px 0px  6px 6px);
+  }
+  &_none{
+    @include sem-rounded( 0px );
+  }
+  &_all{
+    @include sem-rounded(  6px  6px  6px  6px);
+  }
+  &_right{
+    @include sem-rounded( 6px 0px 0px 6px );
+  }
+  &_left{
+    @include sem-rounded( 0px 6px 6px 0px);
+  }
+  &_top-left{
+    @include sem-rounded( 0px 6px 6px 6px);
+  }
+  &_top-right{
+    @include sem-rounded( 6px 0px 6px 6px);
+  }
+  &_bottom-right{
+    @include sem-rounded( 6px 6px 0px 6px );
+  }
+  &_bottom-left{
+    @include sem-rounded( 6px 6px 0px 6px);
+  }
+}

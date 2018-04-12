@@ -1,0 +1,16 @@
+//Dependencies
+@import "~basscss-sass/scss/basscss";
+@import "~@angular/cdk/overlay-prebuilt.css";
+@import "~@angular/cdk/a11y-prebuilt.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+//Reset
+@import './styles/reset/_reset';
+
+//Generic
+@import './styles/generic/_box-sizing';
+
+//Components
+@import './styles/components/dialog';

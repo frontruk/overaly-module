@@ -1,0 +1,28 @@
+@import "~basscss-sass/scss/basscss";
+@import './circle';
+@import './shadow';
+
+.dialog-container {
+  @include sem-rounded( 0px 12px 12px 12px);
+  @extend .sem-shadow;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.dialog-container {
+  &--header{
+    @extend .px1, .py1, .mt0;
+    @include sem-rounded( 0px 12px 0px 0px);
+  }
+  &--body{
+    @include sem-rounded( 0px 12px 12px 12px);
+  }
+  &--body_spaced{
+    @extend .px1, .py1, .mt0;
+    @include sem-rounded( 0px 12px 12px 12px);
+  }
+  &--footer{
+    @extend .px2, .py1, .mt0;
+    @include sem-rounded( 0px 0px 12px 12px);
+  }
+}
+

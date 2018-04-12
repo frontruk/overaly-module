@@ -1,0 +1,19 @@
+@mixin sem-circle($size, $color, $display){
+  display: $display;
+  background: $color;
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+@mixin sem-rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+.sem--corner{
+  ._top{
+    @include sem-rounded( 50% 0% 50% 50%);
+  }
+}

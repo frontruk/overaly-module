@@ -1,0 +1,33 @@
+@import '~basscss-sass/scss/basscss.scss';
+
+:host{
+  @extend .clearfix;
+  height: 100%;
+}
+.sidebar{
+  height: 100%;
+  background: ghostwhite;
+  @extend .col;
+  @extend .col-3;
+  ul{
+    list-style: none;
+    @extend .p0, .m2;
+  }
+  a{
+    color: grey;
+    line-height: 1.8em;
+    text-decoration: none;
+    &:hover{
+      color: #000022;
+    }
+  }
+}
+
+.content{
+  display: block;
+  height: 100%;
+  @extend .col;
+  @extend .col-9;
+  @extend .p1;
+}
+
